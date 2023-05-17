@@ -17,7 +17,7 @@ function T = Get2DNormalizationTransform(X)
     % T 3x3 transformation matrix
     %
     % see Check2DNormalizationTransform
-    
+
     % get the centroid
     c = mean(X,2);
 
@@ -26,4 +26,4 @@ function T = Get2DNormalizationTransform(X)
 
     % construct the transformation matrix
     T = [sqrt(2)/d 0 -c(1)*sqrt(2)/d ; 0 sqrt(2)/d -c(2)*sqrt(2)/d ; 0 0 1];
-    end
+end
